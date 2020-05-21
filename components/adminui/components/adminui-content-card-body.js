@@ -56,6 +56,7 @@ export function load() {
           _this.rootElement.classList.add(cls);
         });
       }
+     
     }
 
     onLoaded() {

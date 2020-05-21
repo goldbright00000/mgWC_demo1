@@ -22,6 +22,7 @@ export function getConfigs(webComponents) {
       state: {
         title: 'Dashboard',
         icon: 'tachometer-alt',
+        img: 'default',
         contentPage: 'dashboard',
         active: true
       }
@@ -367,7 +368,8 @@ export function getConfigs(webComponents) {
       cardTitle: 'Tables Card',
       cardTitleColour: 'warning',
       cardName: 'tables-card',
-      text: 'This is the Tables Page content....'
+      text: 'This is the Tables Page content....',
+      nCardTitleColour: 'white'
     }
   };
 
@@ -391,7 +393,8 @@ export function getConfigs(webComponents) {
       cardTitle: 'Cards!',
       cardTitleColour: 'success',
       cardName: 'cards-card',
-      text: 'This is the Cards Page content....'
+      text: 'This is the Cards Page content....',
+      clsName:'default'
     }
   };
 
@@ -403,7 +406,8 @@ export function getConfigs(webComponents) {
       cardTitle: 'Colours Card',
       cardTitleColour: 'warning',
       cardName: 'colours-card',
-      text: 'This is the Colours Page content....'
+      text: 'This is the Colours Page content....',
+      
     }
   };
 

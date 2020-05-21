@@ -45,6 +45,7 @@ export function load() {
 <li id="${id}" class="nav-item">
   <a class="nav-link" href="#">
     <i class="fas fa-fw fa-exclamation-circle"></i>
+    <img src="" width="80" height="15" style="display:none;"></img>
     <span>Undefined Title</span>
   </a>
 </li>
@@ -59,6 +60,7 @@ export function load() {
       this.style = 'height: 56px';
       let li = this.rootElement;
       this.aTag = li.getElementsByTagName('a')[0];
+     
       this.toggleActive = function() {
         var activeLink = document.getElementsByClassName('nav-item active')[0];
         if (activeLink) activeLink.classList.remove('active');
@@ -74,6 +76,7 @@ export function load() {
       let a = this.aTag;
       let i = a.getElementsByTagName('i')[0];
       let span = a.getElementsByTagName('span')[0];
+      let img = a.getElementsByTagName('img')[0];  /* my changes */
 
       if (state.title) span.textContent = state.title;
       if (state.icon) {
@@ -81,6 +84,14 @@ export function load() {
         i.classList.remove(oldIcon);
         i.classList.add('fa-' + state.icon);
       }
+      /* my changes */
+      if (state.img) {
+        let oldIcon = i.classList.item(2);
+        i.classList.remove(oldIcon);
+        img.src ='images/pulsetile-logo.png';
+        img.style = 'diplay:block;margin-left:-18px;margin-top: -5px;';
+      }
+       /* my changes */
       if (state.active) {
         if (!li.classList.contains('active')) {
           li.classList.add('active');

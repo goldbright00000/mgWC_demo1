@@ -156,6 +156,7 @@ export function load() {
       this.loadCSSFile(prefix + 'css/datatables/dataTables.bootstrap4.min.css');
       this.loadCSSFile(prefix + 'css/datepicker/bootstrap-datepicker3.min.css');
       this.loadCSSFile(prefix + 'css/tablePage-custom.css');
+      this.loadCSSFile(prefix + 'css/table-page/layout.css');
 
       let _this = this;
 

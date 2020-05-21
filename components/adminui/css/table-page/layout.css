@@ -1,0 +1,24 @@
+.dv-width{
+width: 60%;
+float: left;
+margin-right: 10px;
+}
+.dv-width .card-header.py-3{
+    background-color: #ff5d00;    
+}
+.text-white{
+    color:#fff;
+}
+.bg-color{
+    background-color: #ff5d00;
+}
+.btn-orange {
+    color: #fff;
+    background-color: #ff5d00;
+    border-color: #ff5d00;
+}
+.page-item.active .page-link{
+    background-color: #ff5d00 !important;
+    border-color: #ff5d00 !important;
+}
+

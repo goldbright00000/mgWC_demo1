@@ -84,6 +84,11 @@ export function load() {
         this.styles.width = state.width;
         this.setStyles();
       }
+      if (state.clsName) {      
+        this.clsName = state.clsName;
+        this.rootElement.classList.add(this.clsName);
+      }
+      
     }
 
     setStyles() {

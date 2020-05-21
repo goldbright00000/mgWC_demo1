@@ -22,7 +22,8 @@ export function define_tables_page(QEWD) {
             componentName: 'adminui-content-card-header',
             state: {
               title: 'Tables Card',
-              title_colour: 'warning'
+              title_colour: 'warning',
+             
             }
           },
           {

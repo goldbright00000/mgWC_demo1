@@ -26,14 +26,17 @@ export function define_tables_page(QEWD) {
           {
             componentName: 'adminui-content-card',
             state: {
-              name: 'tables-card'
+              name: 'tables-card',
+              clsName: 'dv-width'    /* my changes */           
             },
             children: [
               {
                 componentName: 'adminui-content-card-header',
                 state: {
                   title: 'Tables Card',
-                  title_colour: 'warning'
+                  // title_colour: 'warning',
+                  nCardTitleColour:'white'  /* my changes */
+              
                 }
               },
               {
@@ -51,14 +54,15 @@ export function define_tables_page(QEWD) {
             componentName: 'adminui-content-card',
             state: {
               name: 'map-card-detail'
-              
             },
             children: [
               {
                 componentName: 'adminui-content-card-header',
                 state: {
                   title: '2nd Card',
-                  title_colour: 'warning'
+                  title_colour: 'warning',
+                  nCardTitleColour:'white',  /* my changes */
+                  clsName: 'bg-color'  /* my changes */
                 }
               },
               {
@@ -83,8 +87,9 @@ export function define_tables_page(QEWD) {
                     componentName: 'adminui-button',
                     state: {
                       text: 'ClickIt',
-                      colour: 'success',
-                      cls: 'btn-block'
+                      //colour: 'success',
+                      colour: 'orange',  /* my changes */
+                      cls: 'btn-block'  /* my changes */
                     },
                     hooks: ['ButtonHandlerA']
                   }

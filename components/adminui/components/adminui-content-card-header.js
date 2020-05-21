@@ -69,6 +69,20 @@ export function load() {
           _this.rootElement.classList.add(cls);
         });
       }
+
+      /* my changes */
+      if (state.clsName) {      
+        this.clsName = state.clsName;
+        this.rootElement.classList.add(this.clsName);
+      }
+      if (state.nCardTitleColour) {
+        if (this.titleElement) {
+          let oldColour = this.titleElement.classList.item(2);
+          this.titleElement.classList.remove(oldColour);
+          this.titleElement.classList.add('text-' + state.nCardTitleColour);
+        }
+      }
+      /* my changes */
     }
 
     onLoaded() {

@@ -11,7 +11,8 @@ export function define_sidebar() {
       componentName: 'adminui-sidebar-nav-item',
       state: {
         title: 'Dashboard',
-        icon: 'tachometer-alt',
+       // icon: 'tachometer-alt',
+        img:'pulsetile-logo.png',       /* my changes */
         contentPage: 'dashboard',
         active: true
       }
